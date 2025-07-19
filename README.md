@@ -5,6 +5,11 @@ A full-stack web app built with **PostgreSQL**, **Flask**, and **React** to view
 
 ---
 
+## 🎬 Demo
+
+![Demo of the UI](/demo.gif)
+
+
 ## 📁 Project Structure
 
 ```
