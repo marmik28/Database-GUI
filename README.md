@@ -7,7 +7,7 @@ A full-stack web app built with **PostgreSQL**, **Flask**, and **React** to view
 
 ## 🎬 Demo
 
-![Demo of the UI](/Demo.gif)
+![Demo of the UI](/Demo1.gif)
 
 
 ## 📁 Project Structure
