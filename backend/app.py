@@ -21,7 +21,7 @@ def index():
 @app.route("/db-test")
 def db_test():
     try:
-        db.session.execute("SELECT 1")
+        db.session.execute(text("SELECT 1"))
         return "Database connected successfully!"
     except Exception as e:
         return f"DB Error: {str(e)}", 500
