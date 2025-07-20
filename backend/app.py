@@ -18,6 +18,15 @@ from models import *
 def index():
     return "Backend is running!"
 
+@app.route("/db-test")
+def db_test():
+    try:
+        db.session.execute("SELECT 1")
+        return "Database connected successfully!"
+    except Exception as e:
+        return f"DB Error: {str(e)}", 500
+
+
 # Routes
 @app.route('/api/tables/<string:table_name>')
 def get_table_data(table_name):
