@@ -14,6 +14,10 @@ db = SQLAlchemy(app)
 # Models
 from models import *
 
+@app.route("/")
+def index():
+    return "Backend is running!"
+
 # Routes
 @app.route('/api/tables/<string:table_name>')
 def get_table_data(table_name):
